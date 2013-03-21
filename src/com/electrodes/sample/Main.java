@@ -16,10 +16,11 @@ public class Main extends IterativeRobot {
     public void autonomousInit(){
         //autonomous code
         robot.setShooter(1);
-        Timer.delay(5);
+        Timer.delay(3);
         robot.fireFrisbee(); //yes a loop makes more sense but i'm being lazy :P
         robot.fireFrisbee();
         robot.fireFrisbee();
+        robot.setShooter(0);
     }
     
     public void teleopPeriodic() {
